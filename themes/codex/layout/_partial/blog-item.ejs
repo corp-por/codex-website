@@ -2,7 +2,7 @@
     <div class="blog_item_img">
         <a href="<%- url_for(item.path) %>">
         <% if (item.photos && item.photos.length > 0) { %>
-            <img class="card-img rounded-0" src="/<%- item.path + item.photos[0] %>" alt="">
+            <img class="card-img rounded-0" src="<%- url_for(item.path + item.photos[0]) %>" alt="">
         <% } else { %>
             <img class="card-img rounded-0" src="/" alt="">
         <% } %>

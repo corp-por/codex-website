@@ -1,7 +1,21 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Required meta tags -->
+
+    <meta property="og:title" content="<%- page.title %>">
+    <meta name="twitter:title" content="<%- page.title %>">
+    
+    <meta name="description" content="<%- page.excerpt %>">
+    <meta property="og:description" content="<%- page.excerpt %>">
+    <meta name="twitter:description" content="<%- page.excerpt %>">
+    
+    <% if (typeof(page.tags) !== 'undefined' && typeof(page.photos) !== 'undefined' && page.photos.length > 0) { %>
+    <meta property="og:image" content="<%- config.url + url_for(page.path + page.photos[0]) %>">
+    <meta name="twitter:image" content="<%- config.url + url_for(page.path + page.photos[0]) %>">
+    <% } else { %>
+    <meta property="og:image" content="<%- config.url + url_for('codex.png') %>">
+    <meta name="twitter:image" content="<%- config.url + url_for('codex.png') %>">
+    <% } %>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CODEX <%- page.title ? "- " + page.title : "" %></title>

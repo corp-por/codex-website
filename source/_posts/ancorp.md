@@ -1,7 +1,7 @@
 ---
 title: An Corp
 excerpt: A Resurrection
-date: 2022-11-18 12:15:49
+date: 2022-11-19 12:15:49
 tags:
     - Steam
     - WorldCreator
