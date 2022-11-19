@@ -15,7 +15,7 @@ photos:
 ---
 
 
-Nearly two years ago CODEX was started as a simple idea, perhaps too simple. Over the past 6 months we've been hard at work expanding that idea and the time has finally come for us to share it with you; CODEX has expanded beyond a standalone MMO and will become a powerful tool/platform for hosting and playing your own online games.
+Nearly two years ago CODEX was started as a simple idea, perhaps too simple. Over the past 6 months we've been hard at work expanding that idea and the time has finally come for us to share it with you; CODEX has moved beyond a standalone MMO and will become a powerful tool/platform for hosting and playing your own online games.
 
 # Public Servers
 
@@ -41,7 +41,7 @@ CODEX is now being developed for the Steam platform which, for our small team, a
 
 # Gameplay Improvements
 
-The addition of Public Servers is a huge, but we've been making progress improving the gameplay our engine with two very significant updates.
+The addition of Public Servers is huge, but we've been making progress improving the gameplay of our engine with two very significant updates.
 
 ## Network Optimizations
 
