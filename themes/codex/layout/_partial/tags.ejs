@@ -1,0 +1,8 @@
+<% if (tags.length > 0) { %>
+<li>
+    <i class="far fa-user"></i>
+    <% tags.each(function(tag, i){ %>
+        <a href="<%- url_for(tag.path) %>"><%- tag.name %></a><%- i < tags.length - 1 ? ',' : '' %>
+    <% }); %>
+</li>
+<% } %>

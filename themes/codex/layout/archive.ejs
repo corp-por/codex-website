@@ -1,0 +1,32 @@
+
+
+<%- partial('_partial/breadcrumb', {title:"news"}) %>
+
+<section class="blog_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="blog_left_sidebar">
+                    <% page.posts.each(function(item){ %>
+                        <%- partial('_partial/blog-item', {item: item}) %>
+                        <br />
+                    <% }); %>
+
+                    <% if (page.total > 1){ %>
+                        <%- paginator({
+                            prev_text: '<i class="fa fa-angle-left"></i>',
+                            next_text: '<i class="fa fa-angle-right"></i>',
+                            escape: false
+                          }) %>
+                    <% } %>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <%- partial('_partial/blog-side') %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script id="dsq-count-scr" src="//codex-10.disqus.com/count.js" async></script>

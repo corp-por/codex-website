@@ -1,0 +1,27 @@
+
+<%- partial('_partial/breadcrumb', {
+    title:page.title,
+    img: typeof(page.photos) !== 'undefined' && page.photos.length > 0 ? page.photos[0] : undefined}) %>
+
+<br />
+<br />
+<div class="container black">
+    <div class="row">
+
+        <div class="col-lg-8 mb-5 mb-lg-0">
+            <section class="sample-text-area">
+                <div class="container box_1170">
+                    <h3 class="text-heading"><%- page.title %></h3>
+                    <p class="sample-text">
+                        <%- page.content %>
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <%- partial('_partial/blog-side') %>
+        </div>
+
+    </div>
+</div>

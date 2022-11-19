@@ -1,0 +1,30 @@
+<article class="blog_item">
+    <div class="blog_item_img">
+        <a href="<%- url_for(item.path) %>">
+        <% if (item.photos && item.photos.length > 0) { %>
+            <img class="card-img rounded-0" src="/<%- item.path + item.photos[0] %>" alt="">
+        <% } else { %>
+            <img class="card-img rounded-0" src="/" alt="">
+        <% } %>
+        </a>
+        <a href="#" class="blog_item_date">
+            <h3><%- item.date.format("D") %></h3>
+            <p><%- item.date.format("MMM") %></p>
+        </a>
+    </div>
+
+    <div class="blog_details">
+        <a class="d-inline-block" href="<%- url_for(item.path) %>">
+            <h2>
+                <%- item.title || theme.default_post_title || "Untitled" %>
+            </h2>
+        </a>
+        <p>
+            <%- item.excerpt %>
+        </p>
+        <ul class="blog-info-link">
+            <%- partial('_partial/tags', {tags:item.tags}) %>
+            <%- partial('_partial/comments', {path:item.path}) %>
+        </ul>
+    </div>
+</article>
