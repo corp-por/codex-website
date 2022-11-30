@@ -13,7 +13,7 @@ hexo.on('exit', ()=>{
     posts.forEach(post=>{
 
         let content = post.content.replace(/src=['"]\//g, `src="${hexo.config.url}/`);
-        
+
         content =
 `<!DOCTYPE html>
 <html>
@@ -53,6 +53,29 @@ hexo.on('exit', ()=>{
         .container${width}{
             width: ${width}px;
         }
+        #logo {
+            width:auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18.5px 40px;
+            border-radius: 0;
+            font-size: 15px;
+            font-family: Aclonica,sans-serif;
+            font-weight: 500;
+            color: #fff;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            text-transform: capitalize;
+            background-size: 200% auto;
+            border: 1px solid transparent;
+            background-image: linear-gradient(to left,red 0,#c6019a 51%,red 100%);
+            background-color: transparent;
+            text-decoration:none;
+            margin-top:25px;
+            margin-bottom:10px;
+        }
     </style>
 </head>
 <body>
@@ -68,11 +91,13 @@ hexo.on('exit', ()=>{
             <br />
             <div id='content'>
                 <div class='websitelink'>
-                    <a href='${post.permalink}'>View This Post On Website</a>
+                    <img id='logo' src='https://newsletter.corppor.com/codexlogo.png' />
+                    <br />
+                    <a href='${post.permalink}' class='btn'>Read On Website</a>
                 </div>
                 ${content}
                 <div class='websitelink'>
-                    <a href='${post.permalink}/#disqus_thread'>View Comments</a>
+                    <a href='${post.permalink}/#disqus_thread' class='btn'>View Comments</a>
                 </div>
             </div>
             <br />
