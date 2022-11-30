@@ -63,7 +63,6 @@ hexo.on('exit', ()=>{
             font-size: 15px;
             font-family: Aclonica,sans-serif;
             font-weight: 500;
-            color: #fff;
             -o-transition: all .4s ease-in-out;
             -webkit-transition: all .4s ease-in-out;
             transition: all .4s ease-in-out;
@@ -85,7 +84,7 @@ hexo.on('exit', ()=>{
         <tr>
         <td width="100%" style="text-align:left;">
             <div id="weblink">
-                <webversion>web version of email</webversion>
+                <a href='[webversion]'>web version of email</a>
             </div>
             <hr />
             <br />
@@ -93,11 +92,11 @@ hexo.on('exit', ()=>{
                 <div class='websitelink'>
                     <img id='logo' src='https://newsletter.corppor.com/codexlogo.png' />
                     <br />
-                    <a href='${post.permalink}' class='btn'>Read On Website</a>
+                    <a href='${post.permalink}' class='btn' style='color:#fff;'>Read On Website</a>
                 </div>
                 ${content}
                 <div class='websitelink'>
-                    <a href='${post.permalink}/#disqus_thread' class='btn'>View Comments</a>
+                    <a href='${post.permalink}/#disqus_thread' class='btn' style='color:#fff;'>View Comments</a>
                 </div>
             </div>
             <br />
