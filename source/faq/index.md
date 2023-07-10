@@ -20,12 +20,6 @@ photos:
 
 ---
 
-# When can I play?
-
->Alpha access to CODEX will be available to Patreon Supporters at the Slime level. Once we reach Early Access, the game will be available via the Steam Platform in 2023.
-
----
-
 # Is CODEX a game in its own right or a game creator?
 Both. CODEX will offer official  worlds making use of our official scriptsets in addition to providing the toolset to build and deploy MMO scale games.
 
@@ -45,7 +39,7 @@ Both. CODEX will offer official  worlds making use of our official scriptsets in
 
 # How much will it cost?
 
->Alpha access will cost $5 a month via Patreon. Early-access launch of CODEX on the Steam platform will require a one time box price of $30 via steam.
+>Early-access launch of CODEX on the Steam platform will require a one time box price of $30 via steam.
 
 ---
 
@@ -59,17 +53,9 @@ Both. CODEX will offer official  worlds making use of our official scriptsets in
 
 >World creation is made easy via our World Creator and the modular nature of our scriptsets. Amateur creators can easily mix and match features to create content on their own custom worlds. More advanced creators will want to gain knowledge of the LUA programming language.
 
-We will operate Discord channels available to Patreon Supporters, providing day to day community interaction, answering questions and providing guidance on developing worlds in CODEX.
+We also operate Discord channels for supporters, providing day to day community interaction, answering questions and providing guidance on developing worlds in CODEX.
 
 ---
-
-<!--
-# How many assets are available?
-
->CODEX currently offers over xxx assets specific to fantasy worlds. In time we will be supporting many more gaming genres.
-
----
--->
 
 # How does this release differ from the previous early-access release CODEX: Prologue?
 
@@ -81,4 +67,4 @@ In November 2022 we finalised negotiations to purchase CODEX, allowing us to rea
 
 # How can I support CODEX?
 
->The best way to support CODEX is via our Patreon.
+>The best way to support CODEX is by joining our Discord and donating to us there!
