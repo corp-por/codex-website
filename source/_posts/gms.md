@@ -1,7 +1,7 @@
 ---
 title: Dear GMs.
 excerpt: Dear Game Masters
-date: 2023-06-14 12:15:49
+date: 2023-07-10 11:58:00
 tags:
     - GM
     - ServX
